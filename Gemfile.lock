@@ -97,10 +97,10 @@ GEM
       async-http (~> 0.56)
     async-io (1.41.0)
       async
-    async-job (0.1.0)
+    async-job (0.2.1)
       async (>= 1.0)
       async-redis
-    async-job-adapter-active_job (0.1.0)
+    async-job-adapter-active_job (0.2.1)
       async-job
       thread-local
     async-pool (0.4.0)
@@ -201,6 +201,8 @@ GEM
     net-smtp (0.4.0.1)
       net-protocol
     nio4r (2.7.0)
+    nokogiri (1.16.2-arm64-darwin)
+      racc (~> 1.4)
     nokogiri (1.16.2-x86_64-linux)
       racc (~> 1.4)
     openssl (3.2.0)
@@ -287,6 +289,7 @@ GEM
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
+    sqlite3 (1.7.2-arm64-darwin)
     sqlite3 (1.7.2-x86_64-linux)
     stimulus-rails (1.3.3)
       railties (>= 6.0.0)
@@ -317,6 +320,7 @@ GEM
     zeitwerk (2.6.13)
 
 PLATFORMS
+  arm64-darwin-23
   x86_64-linux
 
 DEPENDENCIES
