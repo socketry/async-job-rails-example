@@ -1,24 +1,22 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This example shows how to use `async-job-adapter-active_job`.
 
-Things you may want to cover:
+## Web Application
 
-* Ruby version
+Start the server:
 
-* System dependencies
+```shell
+$ bundle install
+$ bundle exec falcon serve
+```
 
-* Configuration
+Visit [https://localhost:9292/home/index](https://localhost:9292/home/index) to enqueue a job.
 
-* Database creation
+## Job Server
 
-* Database initialization
+Start the job server:
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```shell
+$ bundle exec ./job-server.rb
+```
