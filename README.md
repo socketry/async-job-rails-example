@@ -2,6 +2,8 @@
 
 This example shows how to use `async-job-adapter-active_job`.
 
+For now, you must have `redis` running on localhost :)
+
 ## Web Application
 
 Start the server:
