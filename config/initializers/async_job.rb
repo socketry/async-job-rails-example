@@ -1,11 +1,14 @@
 
+require 'async/job'
+require 'async/job/backend/redis'
+require 'async/job/backend/inline'
+
 Rails.application.configure do
-	# The default
-	# config.async_job.backend = Async::Job::Backend::Redis
+	config.async_job.backend_for :default do
+		queue Async::Job::Backend::Redis
+	end
 	
-	# Specify a different remote host:
-	# config.async_job.endpoint = Async::IO::Endpoint.tcp("localhost", 6379)
-	
-	# Specify a different redis key prefix:
-	# config.async_job.prefix = "my-queue"
+	config.async_job.backend_for :local do
+		queue Async::Job::Backend::Inline
+	end
 end

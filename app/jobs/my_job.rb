@@ -2,6 +2,8 @@ class MyJob < ApplicationJob
   queue_as :default
 
   def perform(*arguments)
-    $stderr.puts "MyJob#perform: #{arguments.inspect}"
+    JobExecution.create!(name: self.class.name, data: {
+      arguments: arguments,
+    })
   end
 end

@@ -97,10 +97,10 @@ GEM
       async-http (~> 0.56)
     async-io (1.41.0)
       async
-    async-job (0.2.1)
+    async-job (0.3.0)
       async (>= 1.0)
       async-redis
-    async-job-adapter-active_job (0.2.1)
+    async-job-adapter-active_job (0.4.0)
       async-job
       thread-local
     async-pool (0.4.0)
@@ -269,7 +269,7 @@ GEM
     redis-client (0.20.0)
       connection_pool
     regexp_parser (2.9.0)
-    reline (0.4.2)
+    reline (0.4.3)
       io-console (~> 0.5)
     rexml (3.2.6)
     ruby2_keywords (0.0.5)

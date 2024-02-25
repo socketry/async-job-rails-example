@@ -1,2 +1,31 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<h1>Async Job</h1>
+
+<form action="/execute" method="post">
+	<select name="queue">
+		<% Rails.application.config.async_job.backends.each do |name, _| %>
+		<option value="<%= name %>"><%= name %></option>
+		<% end %>
+	</select>
+	<input type="submit" value="Submit" />
+</form>
+
+<h2>Job Executions</h2>
+
+<table>
+	<thead>
+		<tr>
+			<th>ID</th>
+			<th>Name</th>
+			<th>Data</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% @job_executions.each do |job_execution| %>
+			<tr>
+				<td><%= job_execution.id %></td>
+				<td><%= job_execution.name %></td>
+				<td><%= job_execution.data %></td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>
