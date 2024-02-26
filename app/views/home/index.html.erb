@@ -10,22 +10,19 @@
 </form>
 
 <h2>Job Executions</h2>
+<%= turbo_stream_from "job_executions" %>
 
-<table>
-	<thead>
-		<tr>
-			<th>ID</th>
-			<th>Name</th>
-			<th>Data</th>
-		</tr>
-	</thead>
-	<tbody>
-		<% @job_executions.each do |job_execution| %>
+<turbo-frame id="job_executions">
+	<table>
+		<thead>
 			<tr>
-				<td><%= job_execution.id %></td>
-				<td><%= job_execution.name %></td>
-				<td><%= job_execution.data %></td>
+				<th>ID</th>
+				<th>Name</th>
+				<th>Data</th>
 			</tr>
-		<% end %>
-	</tbody>
-</table>
+		</thead>
+		<tbody>
+			<%= render @job_executions %>
+		</tbody>
+	</table>
+</turbo-frame>
