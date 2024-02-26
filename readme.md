@@ -13,7 +13,7 @@ $ bundle install
 $ bundle exec falcon serve
 ```
 
-Visit [https://localhost:9292/home/index](https://localhost:9292/home/index) to enqueue a job.
+Visit [https://localhost:9292/](https://localhost:9292/) to enqueue a job.
 
 ## Job Server
 
