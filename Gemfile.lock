@@ -100,7 +100,7 @@ GEM
     async-job (0.4.2)
       async (>= 1.0)
       async-redis
-    async-job-adapter-active_job (0.5.1)
+    async-job-adapter-active_job (0.5.2)
       async-job (~> 0.4.1)
       thread-local
     async-pool (0.4.0)
