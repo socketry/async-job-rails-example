@@ -12,17 +12,15 @@
 <h2>Job Executions</h2>
 <%= turbo_stream_from "job_executions" %>
 
-<turbo-frame id="job_executions">
-	<table>
-		<thead>
-			<tr>
-				<th>ID</th>
-				<th>Name</th>
-				<th>Data</th>
-			</tr>
-		</thead>
-		<tbody>
-			<%= render @job_executions %>
-		</tbody>
-	</table>
-</turbo-frame>
+<table>
+	<thead>
+		<tr>
+			<th>ID</th>
+			<th>Name</th>
+			<th>Data</th>
+		</tr>
+	</thead>
+	<tbody id="job_executions">
+		<%= render @job_executions %>
+	</tbody>
+</table>
