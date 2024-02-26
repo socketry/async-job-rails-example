@@ -97,11 +97,11 @@ GEM
       async-http (~> 0.56)
     async-io (1.41.0)
       async
-    async-job (0.3.0)
+    async-job (0.4.2)
       async (>= 1.0)
       async-redis
-    async-job-adapter-active_job (0.4.0)
-      async-job
+    async-job-adapter-active_job (0.5.1)
+      async-job (~> 0.4.1)
       thread-local
     async-pool (0.4.0)
       async (>= 1.25)
@@ -324,6 +324,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  async-job
   async-job-adapter-active_job
   async-service
   bootsnap
