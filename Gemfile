@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-gem "rails", "~> 7.1.3", ">= 7.1.3.2"
+gem "rails", "~> 7.2"
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
@@ -14,7 +14,7 @@ gem "falcon"
 
 # Use the async-job job server
 gem "async-job", "~> 0.9"
-gem "async-job-adapter-active_job", "~> 0.11"
+gem "async-job-adapter-active_job", "~> 0.13"
 gem "async-service"
 
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
