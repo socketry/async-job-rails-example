@@ -14,7 +14,7 @@ gem "falcon"
 
 # Use the async-job job server
 gem "async-job", "~> 0.9"
-gem "async-job-adapter-active_job", "~> 0.13"
+gem "async-job-adapter-active_job", "~> 0.14"
 gem "async-service"
 
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
