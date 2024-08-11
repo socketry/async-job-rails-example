@@ -20,7 +20,7 @@ Visit [https://localhost:9292/](https://localhost:9292/) to enqueue a job.
 Start the job server:
 
 ```shell
-$ bundle exec ./job-server.rb
+$ bundle exec async-job-adapter-active_job-server
 ```
 
 ## See Also
