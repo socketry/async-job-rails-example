@@ -1,13 +1,13 @@
 source "https://rubygems.org"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-gem "rails", "~> 7.2"
+gem "rails", "~> 8.0"
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
 # Use sqlite3 as the database for Active Record
-gem "sqlite3", "~> 1.4"
+gem "sqlite3", "~> 2.0"
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "falcon"
@@ -17,6 +17,9 @@ gem "async-job", "~> 0.9"
 gem "async-job-processor-redis", "~> 0.1"
 gem "async-job-adapter-active_job", "~> 0.14"
 gem "async-service"
+
+# Use the async-cable for Action Cable
+gem "async-cable"
 
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
 gem "importmap-rails"
