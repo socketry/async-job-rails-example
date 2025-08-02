@@ -11,6 +11,8 @@ gem "sqlite3", "~> 2.0"
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "falcon"
+gem "localhost"
+gem "bake"
 
 # Use the async-job job server
 gem "async-job", "~> 0.9"
