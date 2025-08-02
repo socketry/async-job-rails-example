@@ -86,7 +86,7 @@ GEM
       io-event (~> 1.11)
       metrics (~> 0.12)
       traces (~> 0.15)
-    async-cable (0.1.0)
+    async-cable (0.2.0)
       actioncable-next
       async (~> 2.9)
       async-websocket
